@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Santiagoponce/intro-signUp-form)
-- Live Site URL: [Add live site URL here](https://santiagoponce.github.io/intro-signUp-form/)
+- Solution URL: [Repository](https://github.com/Santiagoponce/intro-signUp-form)
+- Live Site URL: [Live Site](https://santiagoponce.github.io/intro-signUp-form/)
 
 ## My process
 

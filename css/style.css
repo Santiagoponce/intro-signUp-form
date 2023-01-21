@@ -88,7 +88,7 @@ body
 
 .hidden
 {
-    opacity: 0;
+    opacity: 0; /* Elegí esta opcion para no re-renderizar la pagina*/
 }
 
 .badinputMessage
