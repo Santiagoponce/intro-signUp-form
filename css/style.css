@@ -56,14 +56,11 @@ body
 {
 
     box-shadow: 0 8px 1px rgba(0, 0, 0, 0.137);
-    background-color:rgb(255, 232, 237);
+    background-color:white;
     padding: 1rem;
     border-radius: 15px;
 }
 
-.freeTrialForm label{
-    display: none;
-}
 
 .freeTrialForm >*
 {
