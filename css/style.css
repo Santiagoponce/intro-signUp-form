@@ -29,11 +29,6 @@ body
 
 }
 
-
-
-
-
-
 .container__formSection, .container__text
 {
     inline-size:100%;
@@ -90,6 +85,12 @@ body
     display: flex;
     flex-direction: column;
  }
+
+.hidden
+{
+    opacity: 0;
+}
+
 .badinputMessage
 {
     color: var(--Pink);
@@ -106,6 +107,7 @@ body
  background-position-x: 95%;
  background-position-y: center;
  border-color: var(--Pink);
+ color: var(--Pink);
 }  
 
 .trialSection
@@ -185,7 +187,7 @@ body
 {
     background-color:var(--Grayish_Blue);
     margin-bottom: 1rem;
-    flex-direction: row;
+        flex-direction: row;
 }
 
 
@@ -201,6 +203,11 @@ body
     max-inline-size: 80%;
     margin: 0 auto 0 auto;
 
+}
+
+.badinputMessage
+{
+    color:var(--Blue);
 }
 .freeTrialForm
 {
@@ -235,8 +242,15 @@ body
 
 .disclaimer
 {
-    font-size: .3rem;
+    font-size: .5rem;
     max-inline-size: 60ch;
     margin: .5rem auto 1rem auto;
+}
+
+
+.disclaimer a
+{ 
+    color:var(--Blue);
+
 }
 }
