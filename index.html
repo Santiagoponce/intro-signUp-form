@@ -31,23 +31,27 @@
 
       <form class="freeTrialForm">
         <div class="inputWrapper">
-        <label for="name">first name</label>
-        <input maxlength="16"  minlength="2" class="freeTrialForm__input" required id="name"type="text" placeholder="first name">
+          <label for="name">first name</label>
+          <input maxlength="16"  minlength="2" class="freeTrialForm__input" required id="name"type="text" placeholder="first name">
+          <span class="badinputMessage">El nombre no puede estar vacio</span>
         </div>
 
         <div class="inputWrapper">
           <label for="last-name">last name</label>
           <input maxlength="16"  minlength="2" class="freeTrialForm__input" required id="last-name" type="text" placeholder="last name">
+          <span class="badinputMessage">El apellido no puede estar vacio</span>
         </div>
 
         <div class="inputWrapper">
           <label for="email">email address</label>
           <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"class="freeTrialForm__input" required type="email" id="email" placeholder="email address">
+          <span class="badinputMessage">El email no puede estar vacio</span>
         </div>
         
         <div class="inputWrapper">
           <label for="password">password</label>
           <input title="The password must contain:"pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" class="freeTrialForm__input" required type="password" id="password" placeholder="password">
+          <span class="badinputMessage">La password no puede estar vacio</span>
         </div>
 
         <div class="inputWrapper">
