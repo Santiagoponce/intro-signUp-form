@@ -1,0 +1,231 @@
+:root
+{
+    --Pink:hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark_Blue: hsl(249, 10%, 26%);
+    --Grayish_Blue: hsl(246, 25%, 77%);
+
+    font-size: clamp(1rem,0.75rem + 1vw,2rem);
+}
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    padding: 1.5rem;
+    color: white;
+    margin-bottom: 5rem;
+    background-color:var(--Pink);
+    background-image: url("../images/bg-intro-desktop.png");
+}
+
+
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.container__formSection, .container__text
+{
+    inline-size:100%;
+
+}
+.container__h1
+{
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-inline-size: 20rem;
+    text-align: center;
+    line-height: 2rem;
+
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container__p{
+    line-height: 1.5rem; 
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.freeTrialForm
+{
+
+    box-shadow: 0 8px 1px rgba(0, 0, 0, 0.137);
+    background-color:rgb(255, 232, 237);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.freeTrialForm label{
+    display: none;
+}
+
+.freeTrialForm >*
+{
+    margin: 1rem .5rem 1rem .5rem;
+}
+
+.freeTrialForm__input{
+
+    font-weight: 700;
+    text-transform:capitalize;
+    outline: none;
+    border:1px solid var(--Grayish_Blue);
+    inline-size: 100%;
+    padding: .5rem;
+}
+
+
+.freeTrialForm__input--invalid{
+ background-image: url("../images/icon-error.svg");
+ background-repeat: no-repeat;
+ background-position-x: 95%;
+ background-position-y: center;
+ border-color: var(--Pink);
+}  
+
+.trialSection
+{
+    background-color: var(--Blue);
+    box-shadow: 0 8px 1px rgba(0, 0, 0, 0.137);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+.trialSection__price::before
+{
+    content: "$";
+}
+
+.trialSection__description
+{
+    font-size: 1rem;
+    max-inline-size: 20ch;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+.trialSection__price,.trialSection__duration
+{
+    font-weight:700;
+}
+
+
+
+.freeTrialForm__submit
+{   
+    color: white;
+    
+    font-weight: 800;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: var(--Green);
+    text-transform: uppercase;   
+    border: none; 
+    inline-size: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.237) inset;
+    padding: 1rem;
+
+}
+.freeTrialForm__submit:hover{
+    box-shadow: none;
+}
+.disclaimer
+{
+    color: var(--Grayish_Blue);
+    font-size: .6rem;
+    max-inline-size: 40ch;
+    line-height: 1rem;
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+}
+
+.disclaimer__link
+{
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--Pink);
+}
+
+
+
+/*style for desktop*/
+
+@media screen and (min-width:650px)
+{
+body
+{
+    background-color:var(--Grayish_Blue);
+    margin-bottom: 1rem;
+    flex-direction: row;
+}
+
+
+.container
+{
+    flex-direction: row;
+}
+
+.container__formSection >*
+{
+    max-inline-size: 80%;
+    margin: 0 auto 0 auto;
+
+}
+.freeTrialForm
+{
+    padding: .5rem;
+}
+
+.freeTrialForm >*
+{
+    margin: .5rem;
+}
+
+.freeTrialForm__submit
+{   
+   
+    padding: .5rem;
+
+}
+
+.trialSection
+{
+    margin-bottom: 1rem;
+    border: none;
+    padding: .2rem;
+
+}
+
+.trialSection__description
+{
+    font-size: .5rem;
+    max-inline-size: 40ch;
+}
+
+.disclaimer
+{
+    font-size: .3rem;
+    max-inline-size: 60ch;
+    margin: .5rem auto 1rem auto;
+}
+}

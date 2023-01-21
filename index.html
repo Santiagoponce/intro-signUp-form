@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <main class="container">
+    <section class="container__text">
+      <h1 class="container__h1">Learn to code by watching others</h1>
+      <p class="container__p">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+    </section>
+
+    <section class="container__formSection">
+      <section class="trialSection">
+        <p class="trialSection__description">Try it free <time  class="trialSection__duration" datetime="P7D">7 days</time> 
+          then <data class="trialSection__price" value=20.00>20</data>/mo. thereafter</p>
+      </section>
+
+      <form class="freeTrialForm">
+        <div class="inputWrapper">
+        <label for="name">first name</label>
+        <input maxlength="16"  minlength="2" class="freeTrialForm__input" required id="name"type="text" placeholder="first name">
+        </div>
+
+        <div class="inputWrapper">
+          <label for="last-name">last name</label>
+          <input maxlength="16"  minlength="2" class="freeTrialForm__input" required id="last-name" type="text" placeholder="last name">
+        </div>
+
+        <div class="inputWrapper">
+          <label for="email">email address</label>
+          <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"class="freeTrialForm__input" required type="email" id="email" placeholder="email address">
+        </div>
+        
+        <div class="inputWrapper">
+          <label for="password">password</label>
+          <input title="The password must contain:"pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" class="freeTrialForm__input" required type="password" id="password" placeholder="password">
+        </div>
+
+        <div class="inputWrapper">
+          <input class="freeTrialForm__submit" type="submit" value="claim your free trial">
+          <p class="disclaimer">By clicking the button, you are agreeing to our 
+            <a class="disclaimer__link" href="#">Terms and Services</a></p>
+        </div>
+
+      </form>
+    </section>
+
+
+
+
+
+
+  </main>
+
+</body>
+</html>
